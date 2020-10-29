@@ -90,10 +90,10 @@ class animal:
         self.birthdate=(input('Enter the birthdate: '))
     
     def display(self):
-        print('=====')
-        print(self.name + ' is a '+ self.typ +'.')
-        print(self.name + ' is a '+ self.breed +' and is owned by ' +self.owner + '.')
-        print('=====')
+        print(self.name)
+        print(self.typ)
+        print(self.breed)
+        print(self.owner)
     
 def main():
     animals=[]
@@ -120,6 +120,7 @@ def main():
             
         if num == 3:
             print('Thank you for using this program.')
+            break
             
 
 main()
