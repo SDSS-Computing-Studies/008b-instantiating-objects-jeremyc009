@@ -47,6 +47,7 @@ def main():
             
         if num == 3:
             print('Thank you for using this program.')
+            break
             
 
 main()
