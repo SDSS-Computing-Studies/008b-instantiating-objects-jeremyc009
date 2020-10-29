@@ -29,7 +29,8 @@ def main():
         print("1: Enter a new pet")
         print('2: Retrieve a pet')
         print('3: Exit')
-        num=int(input("Enter [1,2,3]:"))
+        num=input("Enter [1,2,3]:")
+        num = int(num)
         if num == 1:
             animals.append(animal())
         if num == 2:
