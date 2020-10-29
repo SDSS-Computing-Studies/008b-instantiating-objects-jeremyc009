@@ -9,11 +9,11 @@ class animal:
     birthdate=None
 
     def __init__(self):
-        self.typ=input("Enter the Type of animal: ")
-        self.breed=input("Enter the breed of animal: ")
-        self.name=input('Enter the name of the animal: ' )
-        self.owner=input('Enter the name of the owner: ')
-        self.birthdate=(input('Enter the birthdate: '))
+        self.typ=input()
+        self.breed=input()
+        self.name=input( )
+        self.owner=input()
+        self.birthdate=(input())
     
     def display(self):
         print(self.name)
@@ -25,16 +25,13 @@ def main():
     animals=[]
     num = 0
     while True:
-        print("Please select one of the following options: ")
-        print("1: Enter a new pet")
-        print('2: Retrieve a pet')
-        print('3: Exit')
-        num=input("Enter [1,2,3]:")
+       
+        num=input()
         num = int(num)
         if num == 1:
             animals.append(animal())
         if num == 2:
-            ind=input('Enter the name of the animal: ').strip()
+            ind=input().strip()
             length=len(animals)
             for i in range(0,length):
                 name=animals[i].name
@@ -46,8 +43,9 @@ def main():
 
             
         if num == 3:
-            print('Thank you for using this program.')
+            print()
             break
             
 
 main()
+
